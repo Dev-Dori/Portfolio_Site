@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 	<head>
-
+		<script data-ad-client="ca-pub-7650430409775519" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="http://DevDori.com">
 		<meta property="og:title" content="데브도리">
@@ -51,6 +51,12 @@
 		<!--[if lt IE 9]-->
 		<script src="js/html5shiv.min.js"></script>
 		<!--[endif]-->
+		<script>
+			function openInNewTab(url) {
+				var win = window.open(url, '_blank');
+				win.focus();
+			}
+		</script>
 	</head>
 	<body>
 
@@ -92,7 +98,7 @@
 			        <li><a href="#about">소개</a></li>
 			        <li><a href="#study">공부</a></li>
 			        <li><a href="#portfolio">작업</a></li>
-			        <li><a href="#blog">블로그</a></li>
+			        <li><a onclick="openInNewTab('https://devdori.tistory.com');">블로그</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container -->
@@ -109,6 +115,10 @@
 					<h3>I Am ,</h3>
 					<h1>Do Hyun</h1>
 					<h4>I<span></span> </h4>
+					<div id="git-project-button">
+						<button class="button" onclick="location.href='https://github.com/Dev-Dori' ">Github</button>
+						<button class="button">Project</button>
+					</div>
 				</div>
 
 				<div class="button-scroll" data-scrollTo="about"><span></span></div>
@@ -136,8 +146,8 @@
 									<h5 class="mb-20">Who Am I</h5>
 									<p class="mb-20">
 										안녕하세요 선린인터넷고등학교 정보보호과에 재학 중인 임도현입니다.
-										저는 보안분야로 진로를 생각하고 있으며 항상 초심을 잃지 않도록 항상 끝까지 노력하고 스스로의 길을 긍정적으로 바라보고 있습니다.
-										요즘 코로나로 외부대회에 참가하지 못한게 너무 아쉽지만 앞으로 점차 상황이 나아지면 많은 활동을 통해 제 자신을 발전할 것입니다.
+										저는 보안분야로 진로를 정하고 항상 초심을 잃지 않도록 항상 끝까지 노력며 스스로의 길을 개척해 나가는 중입니다.
+										앞으로 점차 다양한 분야로 제 자신을 발전시킬 것입니다.
 									</p><br><br><br>
 									<h5 class="mb-20">Hobby</h5>
 									<p class="mb-30">
@@ -180,7 +190,7 @@
 								<div class="col-md-4">
 									<div class="serv-item">
 										<span>02</span>
-										<h6>systemtem Hacking</h6>
+										<h6>System Hacking</h6>
 										<p>운영 체제나 소프트웨어, 하드웨어에 내재된 보안 취약점을 해킹하는 것.</p>
 									</div>
 								</div>
@@ -406,12 +416,12 @@
 		<footer>
 			<div class="container">
 				<div class="social-icon">
-					<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+					<a id="facebook" href="https://web.facebook.com/profile.php?id=100009637328604" target="_blank"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
 					<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
 					<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-					<span><i class="fa fa-github" aria-hidden="true"></i></span>
+					<a id="github" href="https://github.com/Dev-Dori" target="_blank"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
 				</div>
-				<p class="info_footer">임도현 | 이메일 trouna43@gmail.com | 카카오톡 trouna43</p>
+				<p class="info_footer">임도현 | 이메일 trouna43@devdori.com | 카카오톡 trouna43</p>
 				<p>Copy Right &copy; By DevDori | All Right Reserved.</p>
 			</div>
 		</footer>
